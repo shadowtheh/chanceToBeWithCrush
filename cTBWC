@@ -11,9 +11,9 @@ public class Main {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
-        
+
         Scanner productName = new Scanner(System.in);
 
         String pN;
@@ -25,11 +25,26 @@ public class Main {
 
                 for (int i = 0; i < 1; i++) {
                 x = iD();
+                System.out.println("loading...");
+                Thread.sleep(1000);
+                System.out.println();
+
                 System.out.println(x + "%");
 
+                if(x <= 20){
+                    System.out.println("\ud83d\ude14");
+                }
+                if(x > 20 && x <= 65){
+                    System.out.println("\ud83d\ude0a");
+                    }
+                if(x > 65 && x <= 99) {
+                    System.out.println("\ud83d\ude0d");
+                }
+                    else
+                    System.out.println();
 
-            }
+
+                }
         }
     }
 }
-
