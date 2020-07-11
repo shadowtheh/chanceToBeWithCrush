@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    //Лотерея
+    //Функция создания рандомного числа
     public static int iD() {
         return (int) (Math.random() * 100);
     }
